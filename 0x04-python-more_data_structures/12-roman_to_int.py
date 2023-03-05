@@ -13,5 +13,9 @@ def roman_to_int(roman_string):
             n += int(romVal[i])
             for j in range(len(list)-1):
                 if list[j] == "I" and (list[j + 1] == "V" or list[j + 1] == "X"):
+                    n -= int(romVal[list[j]]* 2)
+                elif list[j] == "X" and (list[j + 1] == "L" or list[j + 1] == "C"):
+                    n -= int(romVal[list[j]] * 2)
+                elif list[j] == "C" and (list[j + 1] == "D" or list[j + 1] == "M"):
                     n -= int(romVal[list[j]] * 2)
     return n
