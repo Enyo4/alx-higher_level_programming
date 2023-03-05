@@ -4,11 +4,10 @@ def best_score(a_dictionary):
     if not a_dictionary:
         return None
     else:
-        num = []
+        max = 0
         for i, j in a_dictionary.items():
-            num.append(j)
-        max = num[0]
-        for x in range(len(num)):
-            if num[x] > max:
-                max = num[x]        
-        return max
+            if a_dictionary[i] > max:
+                max = a_dictionary[i]
+        for i, j in a_dictionary.items():
+            if a_dictionary[i] == max:
+                return i
