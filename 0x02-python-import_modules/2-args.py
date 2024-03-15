@@ -2,8 +2,8 @@
 
 if __name__ == "__main__":
     import sys
-    
-    total = int(len(sys.argv)) - 1
+
+    total = len(sys.argv) - 1
     if total == 0:
         print("0 argument.")
     elif total == 1:
