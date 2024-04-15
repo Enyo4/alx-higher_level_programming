@@ -8,6 +8,4 @@ def common_elements(set_1, set_2):
 
     Returns: The common element
     """
-    for i in set_1:
-        if i in set_2:
-            return (i)
+    return set_1 & set_2
