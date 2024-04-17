@@ -7,7 +7,7 @@ def weight_average(my_list=[]):
 
     Returns: 0 if list is empty
     """
-    if my_list is None:
+    if not my_list and my_list is None:
         return 0
 
     total = 0
