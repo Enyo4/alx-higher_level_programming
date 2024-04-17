@@ -7,13 +7,16 @@ def weight_average(my_list=[]):
 
     Returns: 0 if list is empty
     """
-    if not my_list and my_list is None:
+    if not my_list or my_list is None:
         return 0
 
     total = 0
     div = 0
-    for tup in my_list:
-        total += tup[0] * tup[1]
-        div += tup[1]
+    for score, weight in my_list:
+        total += score * weight
+        div += weight
+
+        if div == 0:
+            return 0
 
     return (total/div)
