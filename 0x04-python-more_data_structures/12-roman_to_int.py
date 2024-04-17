@@ -11,11 +11,11 @@ def roman_to_int(roman_string):
     num = 0
 
     if roman_string is None:
-        return None
+        return 0
 
     for s in roman_string:
-        if s not in rom_val.keys()
-        return None
+        if s not in rom_val:
+            return 0
 
     for i in range(len(roman_string)):
         index = rom_val[roman_string[i]]
