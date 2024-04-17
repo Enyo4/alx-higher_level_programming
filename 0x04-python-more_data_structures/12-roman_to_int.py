@@ -13,6 +13,10 @@ def roman_to_int(roman_string):
     if roman_string is None:
         return None
 
+    for s in roman_string:
+        if s not in rom_val.keys()
+        return None
+
     for i in range(len(roman_string)):
         index = rom_val[roman_string[i]]
         if i < len(roman_string)-1 and index < rom_val[roman_string[i+1]]:
