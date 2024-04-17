@@ -11,7 +11,7 @@ def roman_to_int(roman_string):
     num = 0
     
     if not isinstance(roman_string, str) or roman_string == "":
-        return None
+        return 0
 
     for s in roman_string:
         if s not in rom_val:
