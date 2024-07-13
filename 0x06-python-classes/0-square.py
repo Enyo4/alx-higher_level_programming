@@ -5,6 +5,7 @@ square.py
 This module defines an empty Square class.
 """
 
+
 class Square:
     """
     A class used to represent a Square
